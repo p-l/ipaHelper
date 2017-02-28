@@ -1,7 +1,6 @@
-# ipaHelper script#
-==========
+# ipaHelper script
 
-Script for examining and resigning ipa files
+Script for examining and resigning ipa files.
 
 ## COMMANDS
 
@@ -33,6 +32,7 @@ options:
     display the entitlements on the profile
 ```
 
+
 ### FIND
 
 Looks for profiles saved in the users library matching the bundle ID of the `.ipa`, `.app`, `.xcarchive` or `.zip` file containing an `.app` file. 
@@ -52,6 +52,7 @@ options:
     return the profile information in a JSON dictionary
 ```
 
+
 ### INFO
 
 Checks the `Info.plist` of an `.ipa`, `.app`, `.xcarchive`, or `.zip` file containing an `.app` file, or shows the information about and `Info.plist` file
@@ -68,6 +69,7 @@ options:
     display the entire Info.plist in xml format
 ```
 
+
 ### SUMMARY
 
 Displays profile and info.plist information about an ipa, app, xcarchive, or zip *file* containing an app file.
@@ -83,6 +85,7 @@ options:
     do not remove or zip the temporary app directory after returning summary information
 ```
 
+
 ### CLEAN
 
 Cleans temporary files left over from previous command with the `--dont-clean` option. If run with the `--all` option, the entire temp folder for ipaHelper is deleted. 
@@ -96,6 +99,7 @@ options:
     the entire temp folder for ipaHelper is deleted
 ```
 
+
 ### REZIP
 
 Rezips left over temporary files from `summary` command with the `--dont-clean` option as `[output file]`. The `[output file]` must be an `.app`, `.ipa`, `.appex`, or `.zip` file.
@@ -103,6 +107,7 @@ Rezips left over temporary files from `summary` command with the `--dont-clean` 
 ```
 ipaHelper rezip [outputfile]
 ```
+
 
 ### VERIFY
 
@@ -112,6 +117,7 @@ If no `[file]` is provided the first (alphabetically) `.ipa` file in the working
 ```
 ipaHelper verify [file]
 ```
+
 
 ### RESIGN
 
@@ -140,6 +146,7 @@ options:
     overwrite output file on resign without asking. Uses the profiles App ID if the App ID and Bundle ID do not match.
 ```
 
+
 ### OPEN
 
 Copies `[file]` into a temporary file location, unzipped and prints the path to the app file.
@@ -148,6 +155,7 @@ If no `[file]` is provided, the first (alphabetically) `.ipa` file in the workin
 ```
 ipaHelper open [file]
 ```
+
 
 ### HELP
 
@@ -158,9 +166,11 @@ ipaHelper help [options] [command]
   -v option is present it shows the usage information for all of the commands.
 ```
 
+
 ## AUTHOR
 
 Marcus Smith
+
 
 ## ORIGINAL SOURCE
 
